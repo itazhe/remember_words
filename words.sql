@@ -1,0 +1,13 @@
+SET NAMES utf8;
+
+CREATE DATABASE IF NOT EXISTS wordsdb DEFAULT CHARACTER SET utf8;
+
+CREATE TABLE words.words (
+	word VARCHAR(255) NOT NULL,
+	translation varchar(255) NOT NULL,
+	PRIMARY KEY (word)
+);
+
+-- CREATE USER 'dj'@'127.0.0.1' IDENTIFIED BY '123456';
+-- GRANT ALL ON mydb.* to 'dj'@'127.0.0.1';
+-- FLUSH PRIVILEGES;
