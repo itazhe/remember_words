@@ -135,6 +135,7 @@ def write_memory():
                     break
             else:
                 print("默写错误！！！")
+                print("正确的答案是: " + list1[x][y])
                 input("你要再记下这个单词，按回车继续")
                 m = input("退出(q)")
                 if m == "q":
@@ -186,6 +187,7 @@ def review_write_memory():
                 main()
         else:
             print("默写错误！！！")
+            print("正确的答案是：" + list2[x][y])
             input("你要再记下这个单词，按回车继续")
             if m == "q":
                 main()
